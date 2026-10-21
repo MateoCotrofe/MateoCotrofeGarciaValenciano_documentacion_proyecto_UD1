@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Gestiona el listado y las operaciones de consulta sobre las incidencias del centro.
  * Permite listar todas las incidencias, filtrar las abiertas, realizar búsquedas por texto
- * o recuperar elementos específicos de forma segura mediante excepciones.
+ * o recuperar elementos específicos de forma segura mediante excepciones
  *
  * @author Mateo Cotrofe García-Valenciano
  * @version 1.0.0
@@ -16,7 +16,7 @@ public final class GestorIncidencias {
     private final List<Incidencia> incidencias;
 
     /**
-     * Inicializa el gestor cargando un conjunto de incidencias predeterminadas de ejemplo.
+     * Inicializa el gestor cargando un conjunto de incidencias predeterminadas de ejemplo
      */
     public GestorIncidencias() {
         incidencias = List.of(
@@ -28,18 +28,18 @@ public final class GestorIncidencias {
     }
 
     /**
-     * Devuelve la lista completa de incidencias registradas.
+     * Devuelve la lista completa de incidencias registradas
      *
-     * @return Una {@link List} con todas las incidencias.
+     * @return Una {@link List} con todas las incidencias
      */
     public List<Incidencia> listar() {
         return incidencias;
     }
 
     /**
-     * Filtra y devuelve únicamente las incidencias que se encuentran en estado abierto.
+     * Filtra y devuelve únicamente las incidencias que se encuentran en estado abierto
      *
-     * @return Una {@link List} con las incidencias abiertas.
+     * @return Una {@link List} con las incidencias abiertas
      */
     public List<Incidencia> listarAbiertas() {
         return incidencias.stream()
@@ -48,10 +48,10 @@ public final class GestorIncidencias {
     }
 
     /**
-     * Busca incidencias cuyo identificador o título coincidan con el texto introducido.
+     * Busca incidencias cuyo identificador o título coincidan con el texto introducido
      *
      * @param texto Texto o palabra clave a buscar.
-     * @return Una {@link List} con las incidencias que coinciden con el criterio.
+     * @return Una {@link List} con las incidencias que coinciden con el criterio
      */
     public List<Incidencia> buscar(String texto) {
         return incidencias.stream()
@@ -60,11 +60,11 @@ public final class GestorIncidencias {
     }
 
     /**
-     * Busca una incidencia específica a partir de su identificador único.
+     * Busca una incidencia específica a partir de su identificador único
      *
-     * @param id Identificador único de la incidencia.
-     * @return La {@link Incidencia} encontrada.
-     * @throws IncidenciaNoEncontradaException si no existe ninguna incidencia con ese ID.
+     * @param id Identificador único de la incidencia
+     * @return La {@link Incidencia} encontrada
+     * @throws IncidenciaNoEncontradaException si no existe ninguna incidencia con ese ID
      */
     public Incidencia buscarPorId(String id) throws IncidenciaNoEncontradaException {
         return incidencias.stream()
@@ -75,12 +75,12 @@ public final class GestorIncidencias {
 
     /**
      * @deprecated Desde la versión 1.0.0, este método está obsoleto porque oculta los errores
-     * devolviendo {@code null} en lugar de propagar la excepción.
+     * devolviendo {@code null} en lugar de propagar la excepción
      * Utilice {@link #buscarPorId(String)} en su lugar para gestionar correctamente el error mediante
-     * {@link IncidenciaNoEncontradaException}.
+     * {@link IncidenciaNoEncontradaException}
      *
      * @param id Identificador de la incidencia.
-     * @return La incidencia encontrada o {@code null} si no se encuentra.
+     * @return La incidencia encontrada o {@code null} si no se encuentra
      * @see #buscarPorId(String)
      */
     @Deprecated(since = "1.0.0", forRemoval = false)
