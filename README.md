@@ -6,10 +6,10 @@ Aplicación de consola desarrollada en Java para consultar y gestionar de manera
 
 ## Características y Funcionalidades
 La aplicación permite realizar las siguientes operaciones tanto mediante un menú interactivo en bucle como por argumentos en la línea de comandos:
-* **Listar todas las incidencias**: Muestra el registro completo de avisos[cite: 1, 5].
-* **Listar incidencias abiertas**: Filtra y muestra únicamente aquellas incidencias que siguen activas[cite: 1, 2, 5].
-* **Búsqueda por texto**: Permite buscar incidencias filtrando por coincidencias en su identificador o título[cite: 1, 2, 3, 5].
-* **Consulta por ID**: Muestra el detalle de una incidencia específica introduciendo su identificador exacto[cite: 1, 2, 4, 5].
+* **Listar todas las incidencias**: Muestra el registro completo de avisos
+* **Listar incidencias abiertas**: Filtra y muestra únicamente aquellas incidencias que siguen activas
+* **Búsqueda por texto**: Permite buscar incidencias filtrando por coincidencias en su identificador o título
+* **Consulta por ID**: Muestra el detalle de una incidencia específica introduciendo su identificador exacto
 
 ---
 
