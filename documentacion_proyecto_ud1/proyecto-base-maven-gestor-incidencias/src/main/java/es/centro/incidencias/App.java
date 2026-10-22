@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * Clase principal de la aplicación de consola para la gestión de incidencias.
  * Permite ejecutar la aplicación mediante un menú interactivo en bucle o a través
- * de argumentos de línea de comandos para automatizar consultas rápidas.
+ * de argumentos de línea de comandos para automatizar consultas rápidas
  *
  * @author Mateo Cotrofe García-Valenciano
  * @version 1.0.0
